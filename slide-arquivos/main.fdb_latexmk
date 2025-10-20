@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760037226.04304 "c:/Users/User/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" "main.pdf" "main" 1760037228.09209 0
-  "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760037108 122378 c1dc82c6b85f2c9d33e9cc271df3666e ""
+["pdflatex"] 1760988505.78452 "c:/Users/User/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" "main.pdf" "main" 1760988507.30539 0
+  "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760725096 122378 c1dc82c6b85f2c9d33e9cc271df3666e ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760036004 13286482 041c979a045a6d9f0a02c3c15764d74c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -21,6 +21,7 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty" 1575926576 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettitlestring.sty" 1576433666 8371 9d55b8bd010bc717624922fb3477d92e ""
+  "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifpdf.sty" 1734114575 480 5778104efadad304ced77548ca2184b1 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1734114575 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1734114575 1057 525c2192b5febbd8c1f662c9468335bb ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.sty" 1575399508 8356 7bbb2c2373aa810be568c29e333da8ed ""
@@ -135,6 +136,7 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamerouterthemeinfolines.sty" 1755104210 2362 480b1768526a0d8bf6a6978690fa9cfd ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamerthemeMadrid.sty" 1755104210 547 fddb0cdcc0d6e52398f228cd29a39f8a ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamerthemedefault.sty" 1755104210 345 b9f1afd5eccd808064d49a802f119443 ""
+  "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/beamer/multimedia.sty" 1755104210 10533 24bb1501031e47e12d64f1097faa57b4 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1739279216 46850 d87daedc2abdc653769a6f1067849fe0 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
@@ -181,12 +183,12 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/User/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" 1760036894 6791 b78952941c831369322dac52e427291d ""
-  "main.aux" 1760037227 8353 3bf5e2e895c1c79e77eab3d2daf60a56 "pdflatex"
-  "main.nav" 1760037227 5047 c47ce4d73ab170adc7f55ed5dfe314cf "pdflatex"
-  "main.out" 1760037227 3393 85b38b7dc39311c479e6ed0f23d76ad8 "pdflatex"
-  "main.tex" 1760036894 6791 b78952941c831369322dac52e427291d ""
-  "main.toc" 1760037227 1145 c24bab284355e014d792c080e522e7c0 "pdflatex"
+  "c:/Users/User/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" 1760988505 4244 7ad36d5e6a26bae2b5ca919d209dbadf ""
+  "main.aux" 1760988507 4067 61ecba24bc165223ef3287e35178422f "pdflatex"
+  "main.nav" 1760988507 2357 a3068d4a5e5fb95cec7782b26e590a56 "pdflatex"
+  "main.out" 1760988507 816 b72b191c7d4659f065cbe218d47ca6cf "pdflatex"
+  "main.tex" 1760988505 4244 7ad36d5e6a26bae2b5ca919d209dbadf ""
+  "main.toc" 1760988507 413 f69cc9c39dfc681976aa5441da92a5b9 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
