@@ -17,6 +17,26 @@
 \setbeamercolor{structure}{fg=cpsred}
 \setbeamercolor{normal text}{fg=black,bg=white}
 \setbeamercolor{itemize item}{fg=cpsred}
+% --- Aplicar o tema CPS aos blocos ---
+\setbeamercolor{block title}{fg=white,bg=cpsred}
+\setbeamercolor{block body}{fg=black,bg=white!98!cpsred}
+\setbeamercolor{exampleblock title}{fg=white,bg=cpsred}
+\setbeamercolor{exampleblock body}{fg=black,bg=white!98!cpsred}
+\setbeamercolor{alertblock title}{fg=white,bg=cpsred}
+\setbeamercolor{alertblock body}{fg=black,bg=white!98!cpsred}
+
+% --- Forçar cores personalizadas nos exampleblocks ---
+\setbeamercolor*{block title example}{use=structure,fg=white,bg=cpsred}
+\setbeamercolor*{block body example}{fg=black,bg=white!98!cpsred}
+
+\setbeamercolor*{block title alerted}{use=structure,fg=white,bg=cpsred}
+\setbeamercolor*{block body alerted}{fg=black,bg=white!98!cpsred}
+
+\setbeamercolor*{block title}{use=structure,fg=white,bg=cpsred}
+\setbeamercolor*{block body}{fg=black,bg=white!98!cpsred}
+
+% --- Bordas arredondadas e sombra leve ---
+\setbeamertemplate{blocks}[rounded][shadow=true]
 
 \usepackage{ragged2e}
 \usepackage{hyperref}
@@ -26,17 +46,22 @@
 % -------------------------------------------------
 % Rodapé padrão
 % -------------------------------------------------
-\setbeamertemplate{footline}[frame number]
-\addtobeamertemplate{footline}{
-  \hfill\usebeamercolor[fg]{frametitle}{\hspace{-1.5cm}\scriptsize }\hspace{1cm}
-}{}
-
-% -------------------------------------------------
-% Informações principais
-% -------------------------------------------------
-\title[Classificação de Manganês e Cobre na Folha da Mexerica, Orientado por Redes Neurais]{\textbf{Classificação de Manganês e Cobre na Folha da Mexerica, Orientado por Redes Neurais}}
-\author{Amanda Vitória Alves Freitas \\ Lucas Gomes Fagundes \\ Valéria de Freitas}
-\date{}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.8cm,dp=0.2cm,leftskip=0.5cm,rightskip=0.5cm]{footline}
+      \color{white}
+      \raisebox{-0.5em}{
+        \includegraphics[height=0.6cm]{img/Fatec-Logo.png}\hspace{0.3cm}
+        \includegraphics[height=0.8cm]{img/Cps-Logo.png}\hspace{0.3cm}
+      }
+      \textbf{\insertshortauthor}
+      \hfill
+      \raisebox{1em}{\insertframenumber{} / \inserttotalframenumber}
+    \end{beamercolorbox}%
+  }%
+}
+\setbeamercolor{footline}{bg=cpsred,fg=white}
 
 % -------------------------------------------------
 % Documento
@@ -44,17 +69,37 @@
 \begin{document}
 
 % Capa
-\begin{frame}
+\begin{frame}[plain]
     \centering
-    \vspace{1cm}
-    {\color{cpsred}\Huge\textbf{Classificação de Manganês e Cobre na Folha da Mexerica, Orientado por Redes Neurais}}\\[0.8cm]
-    {\Large Amanda Vitória Alves Freitas \\ Lucas Gomes Fagundes \\ [0.cm]Valéria de Freitas}\\[0.4cm]
-    \textcolor{cpsgray}{Centro Paula Souza}\\[0.2cm]
-    \textcolor{cpsgray}{FATEC Registro}
+
+    % --- Espaçamento inicial para centralizar a logo ---
+    \vspace*{2.5cm}
+
+    % --- Logo centralizada ---
+    \includegraphics[width=10cm]{img/Nitrusleaf-Logo.png}
+
+    % --- Espaçamento até os textos de rodapé ---
+    \vspace*{2.8cm}
+
+    % --- Rodapé dividido: autores à esquerda e instituição à direita ---
+    \begin{minipage}[t]{0.45\textwidth}
+        \raggedright
+        \textcolor{cpsgray}{Amanda Vitória Alves Freitas}\\
+        \textcolor{cpsgray}{Lucas Gomes Fagundes}\\
+        \textcolor{cpsgray}{Valéria de Freitas}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \raggedleft
+        \textcolor{cpsgray}{\textbf{Centro Paula Souza}}\\
+        \textcolor{cpsgray}{FATEC Registro}
+    \end{minipage}
+
 \end{frame}
 
+
 % Sumário
-\begin{frame}{Sumário}
+\begin{frame}{Agenda}
 \tableofcontents
 \end{frame}
 
@@ -69,6 +114,7 @@ Apresentação breve e objetiva do tema, destacando sua relevância, objetivos p
 
 \end{frame}
 
+% -------------------------------------------------
 \section{Problematização}
 \begin{frame}{Problematização}
 \justifying
@@ -77,19 +123,88 @@ Incoerência entre o que é citado no texto e o que aparece na lista.
 URLs soltas, entradas incompletas e referências fora da norma.
 \end{frame}
 
+% Estado da Arte 1-------------------------------------------------
 \section{Estado da Arte}
 \begin{frame}{Estado da Arte}
 \justifying
 Citações provenientes de páginas não científicas, ausência de fontes oficiais, artigos revisados por pares ou documentos institucionais confiáveis.
 \end{frame}
 
+% Estado da Arte 2-----------------------------------------------
+\begin{frame}{Estado da Arte}
+\justifying
+Um Estudo Comparativo de Deep CNN Na Previsão e Classificação de 
+Deficiências de Macronutrientes no Desenvolvimento de Plantas 
+de Tomate
+
+\includegraphics[width=4cm]{img/Estado-da-arte-2.jpg}
+
+\end{frame}
+
+% Estado da Arte 3-------------------------------------------------
+\begin{frame}{Estado da Arte}
+\justifying
+Citações provenientes de páginas não científicas, ausência de fontes oficiais, artigos revisados por pares ou documentos institucionais confiáveis.
+\end{frame}
+
+% -------------------------------------------------
 \section{Objetivo}
 \begin{frame}{Objetivo}
 \justifying
-Ausência de dados quantitativos e de referências.  
-Organização confusa e, em muitos casos, a tecnologia é apresentada antes da definição clara do problema.
+Diagnosticar deficiência de Cobre ou Manganês na folha 
+da Mexerica \textit{(Citrus Reticulata)}, através de Inteligência Artificial
+
+\vspace{0.5cm} % <-- pequeno gap entre o texto e o bloco
+
+\begin{block}{Objetivos Específicos}
+  \begin{itemize}\setlength{\itemsep}{6pt} % <-- aumenta o espaço entre os itens
+    \item Construir um banco de imagens de folhas com deficiências;
+    \item Treinar e validar uma \textbf{CNN} (Redes Neurais Convolucionais);
+    \item Implementar um protótipo funcional com captura via smartphone;
+    \item Registrar dados em um histórico de acompanhamento;
+    \item Criar módulo de recomendações técnicas com base nos resultados.
+  \end{itemize}
+\end{block}
+
 \end{frame}
 
+% ------------------------------------------------- % 2º slide
+\begin{frame}{Objetivo}
+\justifying
+% --- Texto introdutório ---
+\centering{Motivações e Benefícios:}
+\vspace{0.4cm}
+
+% --- Blocos organizados em colunas ---
+\begin{columns}[T] % alinhamento pelo topo
+  % --- Coluna 1 ---
+  \column{0.45\textwidth}
+  \begin{exampleblock}{\centering Facilidade de Diagnóstico}
+    IA acessível para identificar deficiências via smartphone.
+  \end{exampleblock}
+
+  \vspace{0.3cm}
+
+  \begin{exampleblock}{\centering Eficiência Comparada a Outros Métodos}
+    Diagnóstico rápido e preciso sem necessidade de laboratório.
+  \end{exampleblock}
+
+  % --- Coluna 2 ---
+  \column{0.45\textwidth}
+  \begin{exampleblock}{\centering Registro e Visualização}
+    Mapas e gráficos interativos para monitoramento das plantas.
+  \end{exampleblock}
+
+  \vspace{0.45cm}
+
+  \begin{exampleblock}{\centering Sustentabilidade Agrícola}
+    Uso racional de insumos e redução de perdas na produção.
+  \end{exampleblock}
+\end{columns}
+
+\end{frame}
+
+% -------------------------------------------------
 \section{Metodologia}
 \begin{frame}{Metodologia}
 \justifying
@@ -97,13 +212,37 @@ Objetivos gerais pouco operacionais, específicos ausentes ou mal apresentados.
 Há redundâncias e inversão entre o que é produto e o que é método.
 \end{frame}
 
+% -------------------------------------------------
 \section{Aplicação Prática}
 \begin{frame}{Aplicação Prática}
 \justifying
-Mistura de etapas, ferramentas e resultados.  
-Falta de clareza sobre o fluxo de desenvolvimento, separação entre metodologia de pesquisa e de implementação, e presença de trechos do modelo sem conteúdo autoral.
+% --
+\centering Apresentação prática do projeto:
+\vspace{0.2cm}
+
+% --- Blocos organizados em colunas ---
+\begin{columns}[T] % alinhamento pelo topo
+  % --- Coluna 1 ---
+  \column{0.4\textwidth}
+  \begin{exampleblock}{\centering Protótipo desenvolvido no \textbf{Figma}}
+    \centering
+    \includegraphics[width=2cm]{img/Figma-Logo.png}
+    \vspace{0.2cm}
+  \end{exampleblock}
+
+  % --- Coluna 2 ---
+  \column{0.45\textwidth}
+  \begin{exampleblock}{\centering Aplicativo móvel implementado em \textbf{React Native}}
+    \centering
+    \includegraphics[width=2cm]{img/React-Logo.png}
+    \vspace{0.3cm}
+  \end{exampleblock}
+
+\end{columns}
+
 \end{frame}
 
+% -------------------------------------------------
 \section{Resultados}
 \begin{frame}{Resultados}
 \justifying
@@ -112,6 +251,7 @@ Ausência de fluxogramas obrigatórios.
 Tabelas e seções de exemplo do modelo não substituídas adequadamente.
 \end{frame}
 
+% -------------------------------------------------
 \section{Conclusão}
 \begin{frame}{Conclusão}
 \justifying
