@@ -4,6 +4,14 @@
 \usepackage[brazil]{babel}
 \usetheme{Madrid}
 \usepackage{multimedia}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{xurl}                 % permite quebra "inteligente" em qualquer ponto
+\hypersetup{breaklinks=true}
+\usepackage{setspace}
+\Urlmuskip=0mu plus 2mu
+\def\UrlBreaks{\do\/\do\-\do\_\do\&\do\?\do\=\do\%}
+
 
 % -------------------------------------------------
 % Identidade Visual - Centro Paula Souza
@@ -43,6 +51,12 @@
 
 \setbeamertemplate{headline}{} 
 
+\usepackage{xurl}
+\hypersetup{breaklinks=true}
+\def\UrlBreaks{\do\/\do\-\do\_\do\&\do\?\do\=\do\%} % prefere quebrar em / - _ & ? = %
+\Urlmuskip=0mu plus 2mu
+
+
 % -------------------------------------------------
 % Rodapé padrão
 % -------------------------------------------------
@@ -62,6 +76,8 @@
   }%
 }
 \setbeamercolor{footline}{bg=cpsred,fg=white}
+
+
 
 % -------------------------------------------------
 % Documento
@@ -105,8 +121,9 @@
 
 % -------------------------------------------------
 % SEÇÕES E SLIDES
-% -------------------------------------------------
 
+
+% Pitch-------------------------------------------------
 \section{Pitch}
 \begin{frame}{Pitch}
 \justifying
@@ -114,40 +131,156 @@ Apresentação breve e objetiva do tema, destacando sua relevância, objetivos p
 
 \end{frame}
 
-% -------------------------------------------------
+% Problematização-------------------------------------------------
 \section{Problematização}
 \begin{frame}{Problematização}
 \justifying
-Falta de padronização (itálico de periódicos, DOI, formatação).  
-Incoerência entre o que é citado no texto e o que aparece na lista.  
-URLs soltas, entradas incompletas e referências fora da norma.
+
+\centering{\textbf{Percentual das laranjeiras com greening por setor e região}}
+
+\vspace{1mm}
+\begin{center}
+\includegraphics[width=0.58\linewidth]{img/Greening-incidencia-prob.png}
+
+\vspace{1mm}
+{\footnotesize Figura 1 – Divisão do cinturão citrícola em 5 setores e 12 regiões. \\Fonte: Fundecitrus, São Paulo 2025\textsuperscript{1}}
+\end{center}
+
+%------- referência -------
+\vspace{-1mm}
+\noindent\begin{minipage}[t]{0.96\linewidth}
+\RaggedRight
+% entrelinha bem compacta:
+\begin{spacing}{0.35}
+{\fontsize{4.5}{6.8}\selectfont  % 4pt com entrelinha 6.8pt (bem junto)
+\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}%
+\sloppy % permite quebras mais agressivas sem “overfull”
+
+\textsuperscript{1}\,Fundecitrus. \textit{Levantamento de greening no Cinturão Citrícola de São Paulo e Triângulo/Sudoeste Mineiro}. 2025.
+Disponível em: \url{https://www.fundecitrus.com.br/wp-content/uploads/2025/09/Levantamento-de-doencas-2025_Resumo-greening.pdf}.
+Acesso em: 28 out. 2024.
+}
+\end{spacing}
+\end{minipage}
+
 \end{frame}
 
 % Estado da Arte 1-------------------------------------------------
-\section{Estado da Arte}
+\section{Estado da Arte}  
 \begin{frame}{Estado da Arte}
 \justifying
-Citações provenientes de páginas não científicas, ausência de fontes oficiais, artigos revisados por pares ou documentos institucionais confiáveis.
+
+\centering{\textbf{Abordagens Baseadas em Visão Computacional, Aprendizado de Máquina e 
+Aprendizado Profundo para Identificação de Deficiências Nutricionais em Culturas
+}}
+
+\vspace{1mm}
+\begin{center}
+\includegraphics[width=0.58\linewidth]{img/Estado-da-arte-1.png}
+
+\vspace{1mm}
+{\footnotesize Figura 2 – Divisão do cinturão citrícola em 5 setores e 12 regiões. \\Fonte: Muthusamy e Ramu, 2023\textsuperscript{2}}
+\end{center}
+
+%------- referência -------
+\vspace{-1mm}
+\noindent\begin{minipage}[t]{0.96\linewidth}
+\RaggedRight
+% entrelinha bem compacta:
+\begin{spacing}{0.35}
+{\fontsize{4.5}{6.8}\selectfont  % 4pt com entrelinha 6.8pt (bem junto)
+\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}%
+\sloppy % permite quebras mais agressivas sem “overfull”
+
+\textsuperscript{2}\,MUTHUSAMY, Sudhakar; RAMU, Swarna Priya. \textit{Computer Vision Based Machine Learning and Deep Learning Approaches for Identification of Nutrient Deficiency in Crops: A Survey.}. 2023.
+Disponível em: \url{https://doi.org/10.46488/NEPT.2023.v22i03.025}. Acesso em: 28 out. 2024.
+}
+\end{spacing}
+\end{minipage}
+
 \end{frame}
 
 % Estado da Arte 2-----------------------------------------------
 \begin{frame}{Estado da Arte}
 \justifying
-Um Estudo Comparativo de Deep CNN Na Previsão e Classificação de 
-Deficiências de Macronutrientes no Desenvolvimento de Plantas 
-de Tomate \\
 
-\centering{\includegraphics[width=6cm]{img/Estado-da-arte-2.jpg}}
+\centering{\textbf{Detecção de Doenças e Deficiências Nutricionais em Plantas Baseada em Processamento de Imagens}}
+
+\vspace{1mm}
+\begin{center}
+\includegraphics[width=0.58\linewidth]{img/Estado-da-arte-2.png}
+
+\vspace{1mm}
+{\footnotesize Figura 3 – Esquema do pipeline para detecção de doenças em plantas baseada em imagens. Fonte: Ghorai et al., 2021\textsuperscript{3}}
+\end{center}
+
+%------- referência -------
+\vspace{-1mm}
+\noindent\begin{minipage}[t]{0.96\linewidth}
+\RaggedRight
+% entrelinha bem compacta:
+\begin{spacing}{0.35}
+\fontsize{4.5}{6.8}\selectfont  % 4pt com entrelinha 6.8pt (bem junto)
+\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}%
+\sloppy % permite quebras mais agressivas sem “overfull”
+
+\textsuperscript{3}\,GHORAI, Anirban; et al. \textit{Image Processing Based Detection of Diseases and Nutrient Deficiencies in Plants.}. 2021.
+Disponível em: \url{https://www.researchgate.net/publication/349707825_Image_Processing_Based_Detection_of_Diseases_and_Nutrient_Deficiencies_in_Plants}. Acesso em: 28 out. 2024.
+
+\end{spacing}
+\end{minipage}
 
 \end{frame}
 
-% Estado da Arte 3-------------------------------------------------
+% Estado da Arte 3-----------------------------------------------
 \begin{frame}{Estado da Arte}
 \justifying
-Citações provenientes de páginas não científicas, ausência de fontes oficiais, artigos revisados por pares ou documentos institucionais confiáveis.
+\centering{\textbf{Um Estudo Comparativo de Deep CNN Na Previsão e Classificação de Deficiências de Macronutrientes no Desenvolvimento de Plantas de Tomate}}
+
+\begin{columns}[T,onlytextwidth]
+  % Coluna da imagem
+  \column{0.52\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{img/Estado-da-arte-3.jpg}
+  \vspace{0.5mm}
+
+  % Coluna do texto
+  \column{0.45\textwidth}
+  \raggedright
+
+  {\scriptsize
+  \vspace{1.5em}
+  \setlength{\parskip}{0pt}\setlength{\baselineskip}{9.5pt}%
+  Figura 4 – Resultados de Previsão do Inception-ResNet v2.\\
+  (a–c) Previsão de Deficiência de Cálcio;\\
+  (d–f) Previsão de Carência de Potássio;\\
+  (g,h) Previsão de Falta de Nitrogênio.\par
+  \vspace{1mm}
+  \emph{Fonte:} Tran et al., 2019\textsuperscript{3}
+  }
+\end{columns}
+
+
+                %------- referência -------
+\vspace{-1mm}
+\noindent\begin{minipage}[t]{0.96\linewidth}
+\RaggedRight
+% entrelinha bem compacta:
+\begin{spacing}{0.35}
+{\fontsize{4.5}{6.8}\selectfont  % 4pt com entrelinha 6.8pt (bem junto)
+\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}%
+\sloppy % permite quebras mais agressivas sem “overfull”
+
+\textsuperscript{3}\,Trung-Tin et al.\textit{A Comparative Study of Deep CNN in Forecasting and Classifying the Macronutrient Deficiencies on Development of Tomato Plant}. 2019.
+Disponível em: \url{https://doi.org/10.46488/NEPT.2023.v22i03.025}. Acesso em: 28 out. 2024.
+}
+\end{spacing}
+\end{minipage}
+
 \end{frame}
 
-% -------------------------------------------------
+
+% Objetivo-------------------------------------------------
 \section{Objetivo}
 \begin{frame}{Objetivo}
 \justifying
@@ -167,6 +300,7 @@ da Mexerica \textit{(Citrus Reticulata)}, através de Inteligência Artificial
 \end{block}
 
 \end{frame}
+
 
 % ------------------------------------------------- % 2º slide
 \begin{frame}{Objetivo}
