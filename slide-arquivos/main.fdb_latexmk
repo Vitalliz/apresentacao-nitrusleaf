@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1762218470.87913 "c:/Users/fatec-dsm4/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" "main.pdf" "main" 1762218477.94334 0
+["pdflatex"] 1762302713.13325 "c:/Users/fatec-dsm4/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" "main.pdf" "main" 1762302720.41956 0
   "C:/Users/fatec-dsm4/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762207762 122378 c1dc82c6b85f2c9d33e9cc271df3666e ""
   "C:/Users/fatec-dsm4/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1761693323 13324288 373d0a53baac55384233e59e1cc3193e ""
   "C:/Users/fatec-dsm4/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -186,18 +186,18 @@
   "C:/Users/fatec-dsm4/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/fatec-dsm4/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/fatec-dsm4/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/fatec-dsm4/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" 1762218464 8694 2b58ee7338c12b2a53834430ce579274 ""
+  "c:/Users/fatec-dsm4/Desktop/apresentacao-nitrusleaf/slide-arquivos/main.tex" 1762302703 8709 329ccc9d45815865736ea1b3091c462f ""
   "img/Cps-Logo.png" 1762217344 38314 c8db09e4e087c55e55b2cf2bc9c2f114 ""
   "img/Estado-da-arte-2.jpg" 1762216590 96558 0113723ff3a4f278045a36165b208a07 ""
   "img/Fatec-Logo.png" 1762216836 14713 2b6bc0e9d8bc17d5514a53f24423914d ""
   "img/Figma-Logo.png" 1762213411 324945 adaf29a2286618f36a381b19dfd88f44 ""
   "img/Nitrusleaf-Logo.png" 1762215183 151908 74bf773a512d58ed8f29e4ac5a98d3fd ""
   "img/React-Logo.png" 1762213453 194880 bc4be040ef0f1c2ed94d49414fe4731a ""
-  "main.aux" 1762218477 4469 f690f80e630df295675c5f737dc03dbc "pdflatex"
-  "main.nav" 1762218477 2648 83e0c8c140c69b734e54a4cddb0a0e26 "pdflatex"
-  "main.out" 1762218477 816 b72b191c7d4659f065cbe218d47ca6cf "pdflatex"
-  "main.tex" 1762218464 8694 2b58ee7338c12b2a53834430ce579274 ""
-  "main.toc" 1762218477 416 bc4fea461f1d482d13b0965d7c9153c9 "pdflatex"
+  "main.aux" 1762302720 4469 f690f80e630df295675c5f737dc03dbc "pdflatex"
+  "main.nav" 1762302720 2648 83e0c8c140c69b734e54a4cddb0a0e26 "pdflatex"
+  "main.out" 1762302720 816 b72b191c7d4659f065cbe218d47ca6cf "pdflatex"
+  "main.tex" 1762302703 8709 329ccc9d45815865736ea1b3091c462f ""
+  "main.toc" 1762302720 416 bc4fea461f1d482d13b0965d7c9153c9 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
