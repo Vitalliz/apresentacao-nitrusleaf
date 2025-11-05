@@ -1,0 +1,33 @@
+# LaTeX intermediates
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.toc
+*.out
+*.nav
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.lof
+*.lot
+*.lol
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.dvi
+*.xdv
+*.ps
+
+# Outputs (descomente se NÃO quiser versionar o PDF)
+# *.pdf
+
+# Latexmk misc
+*.fdb_latexmk
+*.blg
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
