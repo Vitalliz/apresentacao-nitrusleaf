@@ -100,7 +100,7 @@
     % --- Rodapé dividido: autores à esquerda e instituição à direita ---
     \begin{minipage}[t]{0.45\textwidth}
         \raggedright
-        \textcolor{cpsgray}{Amanda Vitória Alves Freitas}\\
+        \textcolor{cpsgray}{Amanda Vithória Alves Freitas}\\
         \textcolor{cpsgray}{Lucas Gomes Fagundes}\\
         \textcolor{cpsgray}{Valéria de Freitas}
     \end{minipage}
@@ -313,27 +313,28 @@ da Mexerica \textit{(Citrus Reticulata)}, através de Inteligência Artificial
 \begin{columns}[T] % alinhamento pelo topo
   % --- Coluna 1 ---
   \column{0.45\textwidth}
-  \begin{exampleblock}{\centering Facilidade de Diagnóstico}
-    IA acessível para identificar deficiências via smartphone.
-  \end{exampleblock}
-
-  \vspace{0.3cm}
-
   \begin{exampleblock}{\centering Eficiência Comparada a Outros Métodos}
-    Diagnóstico rápido e preciso sem necessidade de laboratório.
+    Diagnóstico rápido sem necessidade de laboratório.
+  \end{exampleblock}
+  
+  \vspace{0.3cm}
+  \begin{exampleblock}{\centering Facilidade de Diagnóstico}
+    Identificação facilitada via smartphone.
   \end{exampleblock}
 
   % --- Coluna 2 ---
-  \column{0.45\textwidth}
-  \begin{exampleblock}{\centering Registro e Visualização}
-    Mapas e gráficos interativos para monitoramento das plantas.
-  \end{exampleblock}
-
-  \vspace{0.45cm}
-
+  \vspace{0.3cm}
+  \column{0.4\textwidth}
+  \vspace{0.3cm}
   \begin{exampleblock}{\centering Sustentabilidade Agrícola}
-    Uso racional de insumos e redução de perdas na produção.
+    Redução de perdas na produção.
   \end{exampleblock}
+  
+  \vspace{0.4cm}
+  \begin{exampleblock}{\centering Registro e Visualização}
+    Mapas e gráficos interativos.
+  \end{exampleblock}
+  
 \end{columns}
 
 \end{frame}
@@ -342,8 +343,20 @@ da Mexerica \textit{(Citrus Reticulata)}, através de Inteligência Artificial
 \section{Metodologia}
 \begin{frame}{Metodologia}
 \justifying
-Objetivos gerais pouco operacionais, específicos ausentes ou mal apresentados.  
-Há redundâncias e inversão entre o que é produto e o que é método.
+
+\small
+\begin{itemize}
+  \item \textbf{Planejamento}: requisitos, protótipos, UML/SWOT.
+  \item \textbf{Imagens}: captura (celular/upload) + pré (resize/normalização/iluminação).
+  \item \textbf{Pipeline}: API Node.js → CNN (Python) → classes: saudável / Cu / Mn.
+  \item \textbf{Saída}: diagnóstico no app + registro em MySQL.
+  \item \textbf{Treino}:  augmentation + transfer learning (VGG16/ResNet50).
+  \item \textbf{Ferramentas}: React/Next.js, Node.js, Python (TensorFlow/Keras), MySQL.
+\end{itemize}
+
+\vspace{2mm}
+\centering \footnotesize \textbf{Fluxo:} Captura \(\rightarrow\) Processamento \(\rightarrow\) Classificação \(\rightarrow\) Diagnóstico \(\rightarrow\) Registro
+
 \end{frame}
 
 % -------------------------------------------------
@@ -391,6 +404,19 @@ Tabelas e seções de exemplo do modelo não substituídas adequadamente.
 \justifying
 Pedidos de “citação ao final do parágrafo” ignorados.  
 Falta de identificação clara da fonte de dados e lacunas entre citações e lista de referências.
+\end{frame}
+
+%-------------------------------------------------
+% Capa final
+\begin{frame}[plain]
+    \centering
+
+    % --- Espaçamento inicial para centralizar a logo ---
+    \vspace*{2.5cm}
+
+    % --- Logo centralizada ---
+    \includegraphics[width=10cm]{img/Nitrusleaf-Logo.png}
+
 \end{frame}
 
 \end{document}
