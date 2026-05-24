@@ -190,32 +190,6 @@
 \end{frame}
 }
 
-\section{Estado da Arte}
-
-\begin{frame}[t]{Estado da Arte}
-  \scriptsize
-  
-  Análise de \textbf{soluções existentes} no mercado, comparação de \textbf{tecnologias} e abordagens, identificação de \textbf{gaps} e oportunidades, referências bibliográficas e \textbf{trabalhos relacionados}, tendências e \textbf{inovações} na área.
-  
-  \vspace{0.3cm}
-  
-  \begin{table}
-    \centering
-    \tiny
-    \begin{tabular}{|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|}
-      \hline
-      \textbf{Título/Autores} & \textbf{Objetivo} & \textbf{Método} & \textbf{Resultados} & \textbf{Limitações} & \textbf{Gap} \\
-      \hline
-      Classificação de discurso de ódio com Transformers — Silva et al. (2024) & Identificar discurso de ódio em português & Fine-tuning de Transformer com validação cruzada 5-fold & F1 = 0,91, superior a SVM/CNN & Baixo desempenho em textos curtos & Sem explicabilidade e sem tempo real \\
-      \hline
-      Detecção de pragas agrícolas por CNN — Oliveira e Santos (2023) & Reconhecer pragas em imagens de campo & CNN profunda com transferência de aprendizado & Acurácia = 94\% & Sensível à iluminação/oclusão & Não executa em dispositivos de borda \\
-      \hline
-      Detecção de intrusão com LSTM Autoencoder — Almeida et al. (2022) & Detectar anomalias no tráfego de rede & Autoencoder LSTM para reconstrução de séries temporais & Detecção = 96\% com menos falsos positivos & Alto custo computacional & Sem resposta automática ou interpretabilidade \\
-      \hline
-    \end{tabular}
-  \end{table}
-\end{frame}
-
 \section{Objetivo}
 
 {
@@ -244,6 +218,97 @@
   {\fontsize{4}{5}\selectfont\textit{Fonte: Seu Nome}\hfill\textcolor{white}{Imagem: Descrição da imagem}}
 \end{frame}
 }
+
+% ESTADO DA ARTE --------------------------------------------------------------------------------
+\section{Estado da Arte}
+
+% ESTADO DA ARTE 1
+\begin{frame}[t]{Estado da Arte}
+  \scriptsize
+  
+  Abordagens Baseadas em Visão Computacional, Aprendizado de
+  Máquina e Aprendizado Profundo para Identificação de Deficiências
+  Nutricionais em Culturas
+  
+  \vspace{0.3cm}
+  
+  \begin{table}
+    \centering
+    \tiny
+    \begin{tabular}{|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|}
+      \hline
+      \textbf{Título/Autores} & \textbf{Objetivo} & \textbf{Método} & \textbf{Resultados} & \textbf{Limitações} & \textbf{Gap} \\
+      \hline
+      Computer Vision Based Machine Learning and Deep Learning Approaches for Identification of Nutrient Deficiency in Crops: A Survey - Sudhakar e Swarna Priya (2023)
+      & Revisar técnicas de visão computacional para detectar deficiência nutricional em plantas
+      & Survey de trabalhos com ML, DL, UAVs, IoT e sensoriamento remoto
+      & CNNs, UAVs e IoT apresentaram bons resultados na identificação de deficiências
+      & Dependência de grandes bases de dados e dificuldade em diferentes ambientes
+      & Falta de sistemas em tempo real e foco limitado em micronutrientes
+      \\
+      \hline
+
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+% ESTADO DA ARTE 2
+\begin{frame}[t]{Estado da Arte}
+  \scriptsize
+
+  Detecção de Doenças e Deficiências Nutricionais em Plantas
+  Baseada em Processamento de Imagens
+
+  \vspace{0.3cm}
+  
+  \begin{table}
+    \centering
+    \tiny
+    \begin{tabular}{|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|}
+      \hline
+      \textbf{Título/Autores} & \textbf{Objetivo} & \textbf{Método} & \textbf{Resultados} & \textbf{Limitações} & \textbf{Gap} \\
+      \hline
+      Image Processing Based Detection of Diseases and Nutrient Deficiencies in Plants - Ghorai et al. (2021)
+      & Revisar técnicas de processamento de imagens para detectar doenças e deficiências nutricionais em plantas
+      & Survey sobre visão computacional, segmentação, extração de características e classificadores de ML
+      & CNNs, SVM e imagens hiperespectrais apresentaram alta eficiência na detecção de doenças e deficiências
+      & Sensível a iluminação, ruídos e variações ambientais durante captura das imagens
+      & Necessidade de sistemas mais robustos, automáticos e em tempo real para uso em campo
+      \\
+      \hline
+
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+% ESTADO DA ARTE 3
+\begin{frame}[t]{Estado da Arte}
+  \scriptsize
+  
+  Um Estudo Comparativo de Deep CNN Na Previsão e Classificação
+  de Deficiências de Macronutrientes no Desenvolvimento de Plantas
+  de Tomate
+  \vspace{0.3cm}
+  
+  \begin{table}
+    \centering
+    \tiny
+    \begin{tabular}{|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|}
+      \hline
+      \textbf{Título/Autores} & \textbf{Objetivo} & \textbf{Método} & \textbf{Resultados} & \textbf{Limitações} & \textbf{Gap} \\
+      \hline
+      A Comparative Study of Deep CNN in Forecasting and Classifying the Macronutrient Deficiencies on Development of Tomato Plant - Tran et al. (2019)
+      & Classificar e prever deficiências nutricionais em tomateiros utilizando Deep Learning
+      & Uso de CNNs (Inception-ResNet v2 e Autoencoder) com imagens de folhas e frutos; aplicação de Ensemble Averaging
+      & Acurácia de 87,27\% com Inception-ResNet v2 e 91\% utilizando ensemble learning
+      & Dataset reduzido (571 imagens), foco apenas em tomateiros e condições controladas de estufa
+      & Necessidade de validação em ambientes reais e adaptação para diferentes culturas agrícolas e micronutrientes
+      \\
+      \hline
+
+    \end{tabular}
+  \end{table}
+\end{frame}
 
 \section{Ferramental}
 
@@ -277,12 +342,12 @@
 
 {
 \usebackgroundtemplate{%
-  \includegraphics[width=\paperwidth,height=\paperheight]{imgs/img_006.jpg}%
+  \includegraphics[width=\paperwidth,height=\paperheight]{imgs/Metodologias.png}%
 }
 \begin{frame}[t]{Metodologia}
   
   \scriptsize
-  Apresentação, em formato de fluxograma, dos principais processos implementados no projeto, evidenciando as tecnologias empregadas, tais como Internet das Coisas (IoT), Inteligência Artificial (IA) e Banco de Dados.
+  Fluxograma dos principais processos implementados no projeto, evidenciando as tecnologias empregadas, tais como Inteligência Artificial (IA) e Banco de Dados.
 
 \end{frame}
 }
